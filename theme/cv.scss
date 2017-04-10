@@ -1,0 +1,16 @@
+.cv {
+	font-family: "Titillium Web", sans;
+	font-size: 10px;
+	&.name {
+		text-transform: uppercase;
+		font-weight: 900;
+	}
+	&.date {
+		letter-spacing: 2px;
+		font-size: 1.2em;
+	}
+	&.title {
+		font-weight: 800;
+		font-size: 1.2em;
+	}
+}
