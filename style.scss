@@ -5,6 +5,9 @@ Description: Custom theme created for artist Watie White
 Version: 1.0.0
 */
 
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Titillium+Web");
+
 @import "base/base";
 @import "layout/layout";
 @import "modules/modules";

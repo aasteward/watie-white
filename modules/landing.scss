@@ -1,0 +1,23 @@
+.landing-image {
+	background-image: url("/wp-content/uploads/2017/04/3-Holy-Island-Visitors.jpg");
+}
+
+.landing-button {
+	background-color: rgba(0, 0, 0, 0);
+	color: rgba(255, 255, 255, 100);
+	border-color: rgba(255, 255, 255, 100);
+	border-width: 2px !important;
+	border-radius: 2px;
+	border-style: solid;
+	font-family: "Josefin Sans", sans;
+	letter-spacing: 4px;
+	padding: 12px 20px;
+	text-transform: uppercase;
+	-webkit-transition: .25s;
+	transition: .25s;
+	:hover {
+		background-color: rgba(255, 255, 255, 100);
+		color: rgba(0, 0, 0, 100);
+	}
+}
+

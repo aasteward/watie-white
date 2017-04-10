@@ -1,0 +1,42 @@
+.contact {
+	font-family: "Titillium Web", sans;
+}
+
+.social {
+	font-size: .8em;
+	font-weight: bold;
+}
+
+.social-link {
+	color: rgba(0, 0, 0, 100);
+	:hover {
+		color: rgba(150, 150, 150, 100);
+		text-decoration: none;
+	}
+}
+
+.cv {
+	font-family: "Titillium Web", sans;
+	font-size: 10px;
+}
+
+.cv-name {
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.cat-head {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.cv-date {
+	letter-spacing: 2px;
+	font-size: 1.2em;
+}
+
+.cv-title {
+	font-weight: 800;
+	font-size: 1.2em;
+}
+

@@ -4,6 +4,8 @@ Author: Aaron Steward and Ben Fairbanks
 Description: Custom theme created for artist Watie White
 Version: 1.0.0
 */
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Titillium+Web");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,5 +48,76 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+.titillium {
+  font-family: "Titillium Web", sans; }
+
+.foot-spacer {
+  height: 28px; }
+
+.landing-image {
+  margin: 0px;
+  position: relative;
+  background-size: cover;
+  background-position: 50%, 50%;
+  height: 100vh; }
+
+.landing-button {
+  position: absolute;
+  top: 50%;
+  margin-left: 42%; }
+
+.landing-image {
+  background-image: url("/wp-content/uploads/2017/04/3-Holy-Island-Visitors.jpg"); }
+
+.landing-button {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  border-width: 2px !important;
+  border-radius: 2px;
+  border-style: solid;
+  font-family: "Josefin Sans", sans;
+  letter-spacing: 4px;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  -webkit-transition: .25s;
+  transition: .25s; }
+  .landing-button :hover {
+    background-color: white;
+    color: black; }
+
+.contact {
+  font-family: "Titillium Web", sans; }
+
+.social {
+  font-size: .8em;
+  font-weight: bold; }
+
+.social-link {
+  color: black; }
+  .social-link :hover {
+    color: #969696;
+    text-decoration: none; }
+
+.cv {
+  font-family: "Titillium Web", sans;
+  font-size: 10px; }
+
+.cv-name {
+  text-transform: uppercase;
+  font-weight: 900; }
+
+.cat-head {
+  font-weight: bold;
+  font-style: italic; }
+
+.cv-date {
+  letter-spacing: 2px;
+  font-size: 1.2em; }
+
+.cv-title {
+  font-weight: 800;
+  font-size: 1.2em; }
 
 /*# sourceMappingURL=style.css.map */
