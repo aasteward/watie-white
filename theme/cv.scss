@@ -3,7 +3,9 @@
 	font-size: 10px;
 	&.name {
 		text-transform: uppercase;
+		font-size: 2.2em;
 		font-weight: 900;
+		margin-bottom: 20px;
 	}
 	&.date {
 		letter-spacing: 2px;
@@ -13,4 +15,18 @@
 		font-weight: 800;
 		font-size: 1.2em;
 	}
+}
+
+.contact-wrapper {
+	margin-bottom: 22px;
+}
+
+.cat-head {
+	font-size: 1.4em;
+	text-transform: uppercase;
+	margin-bottom: 4px;
+}
+
+.cat-wrapper {
+	margin-bottom: 8px;
 }
