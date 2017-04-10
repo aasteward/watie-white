@@ -83,7 +83,7 @@ table {
   text-transform: uppercase;
   -webkit-transition: .25s;
   transition: .25s; }
-  .landing-button :hover {
+  .landing-button:hover {
     background-color: white;
     color: black; }
 
@@ -96,7 +96,7 @@ table {
 
 .social-link {
   color: black; }
-  .social-link :hover {
+  .social-link:hover {
     color: #969696;
     text-decoration: none; }
 

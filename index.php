@@ -1,16 +1,21 @@
-<?php if ( have_posts() ) : ?>
+<?php get_header(); ?>
 
-  <?php
-  // Start the loop.
-  while ( have_posts() ) : the_post();
-  ?>
+<body>
+	<?php if ( have_posts() ) : ?>
 
-    <?php the_title(); ?>
-    <?php the_content(); ?>
+	  <?php
+	  // Start the loop.
+	  while ( have_posts() ) : the_post();
+	  ?>
 
-  <?php
-  // End the loop.
-  endwhile;
+	    <?php the_content(); ?>
 
-endif;
-?>
+	  <?php
+	  // End the loop.
+	  endwhile;
+
+	endif;
+	?>
+</body>
+
+<?php get_footer(); ?>

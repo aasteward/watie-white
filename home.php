@@ -2,7 +2,7 @@
 
 <div class="landing-image">
 	<div id="button-wrapper">
-		<a href="/index" class="btn landing-button">Watie White</a>
+		<a href="/cv" class="btn josefin landing-button">Watie White</a>
 	</div>
 </div>
 
