@@ -2,6 +2,19 @@
 
 <body>
 
+	<div class="top-menu-wrapper">
+		<div class="top-menu">
+			<ul class="nav-list josefin">
+				<li class="nav-item"><a href="/">Home</a></li>
+				<li class="nav-item"><a href="/category/public-work">Public Art</a></li>
+				<li class="nav-item"><a href="/category/studio-work">Studio Work</a></li>
+				<li class="nav-item"><a href="/cv">CV</a></li>
+				<li class="nav-item"><a href="/contact">Contact</a></li>
+				<li class="nav-item"><a href="/press">Press</a></li>
+			</ul>
+		</div>
+	</div>
+
 	<div class="page-wrapper">
 
 		<div class="side-content">

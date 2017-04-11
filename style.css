@@ -99,6 +99,15 @@ table {
 .publicity {
   font-size: .8em; }
 
+.top-menu-wrapper {
+  padding: 18px; }
+
+.nav-item li {
+  padding: 4px; }
+.nav-item a {
+  line-height: 2.4em;
+  font-size: 1.2em; }
+
 .landing-image {
   background-image: url("/wp-content/uploads/2017/04/3-Holy-Island-Visitors.jpg"); }
 
@@ -134,6 +143,18 @@ table {
     color: #30535e;
     text-decoration: none; }
 
+.top-menu-wrapper {
+  background-color: #30535e; }
+
+.nav-list li {
+  text-align: center; }
+.nav-list a {
+  font-weight: 200;
+  color: #cdcdcd; }
+  .nav-list a:hover {
+    color: #fcfcfc;
+    text-decoration: none; }
+
 .contact {
   font-family: "Titillium Web", sans; }
   .contact.img-block {
@@ -142,6 +163,9 @@ table {
     padding: 12px; }
   .contact.form-wrapper {
     padding: 12px; }
+
+.bio {
+  font-size: .8em; }
 
 form .field {
   margin-bottom: 22px;
@@ -195,6 +219,7 @@ input .wpcf7-submit {
     text-transform: uppercase;
     font-size: 2.2em;
     font-weight: 900;
+    letter-spacing: 2px;
     margin-bottom: 20px; }
   .cv.date {
     letter-spacing: 2px;

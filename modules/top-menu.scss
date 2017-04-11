@@ -1,0 +1,17 @@
+.top-menu-wrapper {
+	background-color: #30535e;
+}
+
+.nav-list {
+	li {
+		text-align: center;
+	}
+	a {
+		font-weight: 200;
+		color: #cdcdcd;
+		&:hover {
+			color: #fcfcfc;
+			text-decoration: none;
+		}
+	}
+}
