@@ -1,7 +1,6 @@
  <head>
   <script src="<?php bloginfo('template_directory'); ?>/slideshow.js"></script>
  </head>
-      <?php $counter = 0; ?>
 <?php if ( have_posts() ) : ?>
 
 <?php
@@ -12,7 +11,7 @@
   <?php $art = get_field( 'the_art' )["url"]; ?>
 
   <div style="width: 75%">
-  <img src=<?php echo $art?> class="slideshow" style="height: 400px; display: none;">
+  <img src=<?php echo $art ?> class="slideshow" style="display: none; height: 400px">
   
   <?php
   // End the loop.
@@ -20,6 +19,7 @@
 
 endif;
 ?>
+
 
 <button class="prev"> Prev </button>
 <button class="next"> Next </button> 
