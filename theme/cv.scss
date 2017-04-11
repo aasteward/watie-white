@@ -13,7 +13,7 @@
 		font-size: 1.2em;
 	}
 	&.title {
-		font-weight: 800;
+		font-weight: bold;
 		font-size: 1.2em;
 	}
 }
@@ -25,6 +25,7 @@
 .cat-head {
 	font-size: 1.4em;
 	text-transform: uppercase;
+	font-style: italic;
 	margin-bottom: 4px;
 }
 

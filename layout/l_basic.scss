@@ -5,3 +5,11 @@
 .content-wrapper {
 	padding: 12px;
 }
+
+.page-wrapper {
+	display: flex;
+}
+
+.main-content {
+	flex-grow: 1;
+}

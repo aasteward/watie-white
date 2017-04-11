@@ -1,21 +1,32 @@
 <?php get_header(); ?>
 
 <body>
-	<?php if ( have_posts() ) : ?>
 
-	  <?php
-	  // Start the loop.
-	  while ( have_posts() ) : the_post();
-	  ?>
+	<div class="page-wrapper">
 
-	    <?php the_content(); ?>
+		<div class="side-content">
+			<?php get_sidebar(); ?>
+		</div>
 
-	  <?php
-	  // End the loop.
-	  endwhile;
+		<div class="main-content">
+			<?php if ( have_posts() ) : ?>
 
-	endif;
-	?>
+			  <?php
+			  // Start the loop.
+			  while ( have_posts() ) : the_post();
+			  ?>
+
+			    <?php the_content(); ?>
+
+			  <?php
+			  // End the loop.
+			  endwhile;
+
+			endif;
+			?>
+		</div>
+	</div>
+
 </body>
 
 <?php get_footer(); ?>

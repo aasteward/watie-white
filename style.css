@@ -61,6 +61,12 @@ table {
 .content-wrapper {
   padding: 12px; }
 
+.page-wrapper {
+  display: flex; }
+
+.main-content {
+  flex-grow: 1; }
+
 .landing-image {
   margin: 0px;
   position: relative;
@@ -72,6 +78,26 @@ table {
   position: absolute;
   top: 50%;
   margin-left: 42%; }
+
+.sidebar-wrapper {
+  height: 100vh;
+  max-width: 200px; }
+
+.logo {
+  margin-bottom: 28px; }
+
+.sidebar-top li {
+  line-height: 1.4em; }
+
+.sidebar-bottom li {
+  line-height: 2.2em; }
+
+.galleries {
+  font-size: 1.6em;
+  margin-bottom: 22px; }
+
+.publicity {
+  font-size: .8em; }
 
 .landing-image {
   background-image: url("/wp-content/uploads/2017/04/3-Holy-Island-Visitors.jpg"); }
@@ -90,7 +116,23 @@ table {
   transition: .25s; }
   .landing-button:hover {
     background-color: white;
-    color: black; }
+    color: #30525E; }
+
+.sidebar-top a {
+  font-weight: 200;
+  color: black; }
+  .sidebar-top a:hover {
+    color: #30535e;
+    text-decoration: none; }
+.sidebar-top li {
+  padding: 4px; }
+
+.sidebar-bottom a {
+  font-weight: 800;
+  color: black; }
+  .sidebar-bottom a:hover {
+    color: #30535e;
+    text-decoration: none; }
 
 .contact {
   font-family: "Titillium Web", sans; }
@@ -145,10 +187,6 @@ input .wpcf7-submit {
       color: #969696;
       text-decoration: none; }
 
-.cat-head {
-  font-weight: bold;
-  font-style: italic; }
-
 .cv {
   font-family: "Titillium Web", sans;
   font-size: 10px;
@@ -162,7 +200,7 @@ input .wpcf7-submit {
     letter-spacing: 2px;
     font-size: 1.2em; }
   .cv.title {
-    font-weight: 800;
+    font-weight: bold;
     font-size: 1.2em; }
 
 .contact-wrapper {
@@ -171,6 +209,7 @@ input .wpcf7-submit {
 .cat-head {
   font-size: 1.4em;
   text-transform: uppercase;
+  font-style: italic;
   margin-bottom: 4px; }
 
 .cat-wrapper {
