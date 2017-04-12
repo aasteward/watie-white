@@ -1,27 +1,37 @@
-      <?php $art = array(); ?>
-<?php if ( have_posts() ) : ?>
-<ul>
-    <?php wp_list_categories( array(
-    ) ); ?> 
-</ul>
-<?php
-  // Start the loop.
-  while ( have_posts() ) : the_post();
-  ?>
+<?php get_header(); ?>
+    <?php if ( have_posts() ) : ?>
 
-  <?php  array_push($art, get_field( 'the_art' )["url"]); ?>
+    <?php
+      // Start the loop.
+      while ( have_posts() ) : the_post();
+      ?>
 
-  <?php
-  // End the loop.
-  endwhile;
+      <?php $art = get_field( 'the_art' )["url"]; ?>
+      <?php $title = get_field( 'title' ) ?>
+      <?php $series = get_field( 'series' ) ?>
+      <?php $media = get_field( 'media' ) ?>
+      <?php $size = get_field( 'size' ) ?>
+      <?php $year = get_field( 'year' ) ?>
 
-endif;
-?>
+      <div style="width: 75%">
+        <img src=<?php echo $art ?> class="slideshow" style="display: none; height: 400px">
+      
+        <div class="slideshow_info_display" style="display: none;">
+          <?php echo $title ?>
+          <?php echo $series ?>
+          <?php echo $media ?>
+          <?php echo $size ?>
+          <?php echo $year ?>
+        </div>
 
-<script hidden class="echo_num"> <?php echo count($art) ?> </script> 
+      <?php
+      endwhile;
+      endif;
+      ?>
 
- <div style="width: 75%">
-    <img src=<?php echo $art[0] ?> class="slideshow" style="height: 400px">
-      <button class="prev"> Prev </button>
-      <button class="next"> Next </button>   
+      <button class="prev" data-direction="prev"> Prev </button>
+      <button class="next" data-direction="next"> Next </button> 
+    </div>
   </div>
+</body>
+<?php get_footer(); ?>
