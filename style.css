@@ -80,7 +80,11 @@ a {
   position: relative;
   top: -312px;
   min-height: 100vh;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  -webkit-transition: .25s;
+  transition: .25s; }
+  .else-wrapper.moved {
+    top: 0px !important; }
 
 .page-wrapper {
   display: flex; }
@@ -123,7 +127,7 @@ a {
 .landing-button {
   position: absolute;
   top: 50%;
-  margin-left: 42%; }
+  margin-left: 41%; }
 
 .sidebar-wrapper {
   height: 100vh;

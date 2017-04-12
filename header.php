@@ -27,7 +27,7 @@
 		</div>
 	</div>
 
-	<div class="else-wrapper" style="top: -312px;">
+	<div class="else-wrapper">
 		<div class="mobile-toggle">
 			<div class="mobile-menu">
 				<div class="logo">

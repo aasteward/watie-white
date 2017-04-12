@@ -11,6 +11,11 @@
 	top: -312px;
 	min-height: 100vh;
 	background-color: #ffffff;
+	-webkit-transition: .25s;
+	transition: .25s;
+	&.moved {
+		top: 0px !important;
+	}
 }
 
 .page-wrapper {
