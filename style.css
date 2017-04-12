@@ -233,7 +233,11 @@ form label {
   font-size: 12px; }
 
 .wpcf7-text {
-  font-size: 12px; }
+  font-size: 12px;
+  background-color: #f9f9f9; }
+
+.wpcf7-textarea {
+  background-color: #f9f9f9; }
 
 .your-name input, .your-email input, .your-subject input, .your-message input {
   padding: 10px;
