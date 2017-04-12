@@ -1,0 +1,35 @@
+.cv {
+	font-family: "Titillium Web", sans;
+	font-size: .8em;
+	line-height: 1.4em;
+	&.name {
+		text-transform: uppercase;
+		font-size: 2.2em;
+		font-weight: 900;
+		letter-spacing: 2px;
+		margin-bottom: 20px;
+	}
+	&.date {
+		letter-spacing: 2px;
+		font-size: 1.2em;
+	}
+	&.title {
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+}
+
+.contact-wrapper {
+	margin-bottom: 22px;
+}
+
+.cat-head {
+	font-size: 1.4em;
+	text-transform: uppercase;
+	font-style: italic;
+	margin-bottom: 4px;
+}
+
+.cat-wrapper {
+	margin-bottom: 8px;
+}

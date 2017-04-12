@@ -5,7 +5,10 @@
 			<div class="side-content">
 				<?php get_sidebar(); ?>
 			</div>
+
 			<div class="main-content">
+				<div class="press-spacer">
+				</div>
 				<?php if ( have_posts() ) : ?>
 
 				  <?php
@@ -13,7 +16,8 @@
 				  while ( have_posts() ) : the_post();
 				  ?>
 
-				    <?php the_content(); ?>
+				    <a class="press" href="<?php the_content(); ?>"><span class="press publication"><?php echo the_field( "publication" ); ?></span> <?php echo the_title(); ?>, <?php the_date( 'y-m-d', '', '', true ) ?></a>
+				    <br>
 
 				  <?php
 				  // End the loop.

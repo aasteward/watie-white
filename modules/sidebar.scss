@@ -1,0 +1,24 @@
+.sidebar-top {
+	a {
+		font-weight: 200;
+		color: rgba(0, 0, 0, 100);
+		&:hover {
+			color: #30535e;
+			text-decoration: none;
+		}
+	}
+	li {
+		padding: 4px;
+	}
+}
+
+.sidebar-bottom {
+	a {
+		font-weight: 800;
+		color: rgba(0, 0, 0, 100);
+		&:hover {
+			color: #30535e;
+			text-decoration: none;
+		}
+	}
+}
