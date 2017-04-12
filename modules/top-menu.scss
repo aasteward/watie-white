@@ -15,3 +15,12 @@
 		}
 	}
 }
+
+.toggler {
+	-webkit-transition: .25s;
+	transition: .25s;
+	&:hover {
+		color: #30535e;
+		text-decoration: none;
+	}
+}

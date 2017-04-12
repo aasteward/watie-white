@@ -55,18 +55,64 @@ table {
 .josefin {
   font-family: "Josefin Sans", sans; }
 
+a {
+  color: black; }
+  a:hover {
+    color: #30535e;
+    text-decoration: none; }
+
+.bold {
+  font-weight: 800; }
+
+.light {
+  font-weight: 200; }
+
+.upcase {
+  text-transform: uppercase; }
+
 .foot-spacer {
   height: 28px; }
 
 .content-wrapper {
   padding: 12px; }
 
+.else-wrapper {
+  position: relative;
+  top: -312px;
+  min-height: 100vh;
+  background-color: #ffffff; }
+
 .page-wrapper {
   display: flex; }
 
 .main-content {
-  flex-grow: 1; }
+  flex-grow: 1;
+  padding: 12px; }
 
+.press-spacer {
+  height: 64px; }
+
+.side-content {
+  display: none; }
+
+.mobile-toggle {
+  display: flex;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center; }
+
+.press-spacer {
+  display: none; }
+
+@media (min-width: 700px) {
+  .side-content {
+    display: block; }
+
+  .mobile-toggle {
+    display: none; }
+
+  .press-spacer {
+    display: block; } }
 .landing-image {
   margin: 0px;
   position: relative;
@@ -81,6 +127,7 @@ table {
 
 .sidebar-wrapper {
   height: 100vh;
+  min-width: 140px;
   max-width: 200px; }
 
 .logo {
@@ -100,6 +147,7 @@ table {
   font-size: .8em; }
 
 .top-menu-wrapper {
+  z-index: -1;
   padding: 18px; }
 
 .nav-item li {
@@ -155,6 +203,13 @@ table {
     color: #fcfcfc;
     text-decoration: none; }
 
+.toggler {
+  -webkit-transition: .25s;
+  transition: .25s; }
+  .toggler:hover {
+    color: #30535e;
+    text-decoration: none; }
+
 .contact {
   font-family: "Titillium Web", sans; }
   .contact.img-block {
@@ -185,7 +240,7 @@ textarea {
   width: 100%;
   border-color: #969696; }
 
-input .wpcf7-submit {
+.wpcf7-submit {
   font-family: "Titillium Web", sans;
   background-color: black;
   color: white;
@@ -193,12 +248,13 @@ input .wpcf7-submit {
   border-width: 2px !important;
   border-radius: 2px;
   border-style: solid;
-  padding: 12px, 20px;
+  padding: 12px, 30px !important;
   text-transform: uppercase;
   -webkit-transition: .25s;
   transition: .25s; }
-  input .wpcf7-submit:hover {
-    background-color: #646464; }
+  .wpcf7-submit:hover {
+    background-color: #646464;
+    border-color: #646464; }
 
 .social {
   font-size: .8em;
@@ -213,7 +269,7 @@ input .wpcf7-submit {
 
 .cv {
   font-family: "Titillium Web", sans;
-  font-size: 10px;
+  font-size: .8em;
   line-height: 1.4em; }
   .cv.name {
     text-transform: uppercase;
@@ -239,5 +295,14 @@ input .wpcf7-submit {
 
 .cat-wrapper {
   margin-bottom: 8px; }
+
+.press {
+  font-family: "Titillium Web", sans;
+  font-size: .8em; }
+
+.publication {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em; }
 
 /*# sourceMappingURL=style.css.map */

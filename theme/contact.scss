@@ -42,24 +42,25 @@ textarea {
 	border-color: rgba(150, 150, 150, 100);
 }
 
-input {
-	.wpcf7-submit {
-		font-family: "Titillium Web", sans;
-		background-color: rgba(0, 0, 0, 100);
-		color: rgba(255, 255, 255, 100);
-		border-color: rgba(0, 0, 0, 100);
-		border-width: 2px !important;
-		border-radius: 2px;
-		border-style: solid;
-		padding: 12px, 20px;
-		text-transform: uppercase;
-		-webkit-transition: .25s;
-		transition: .25s;
-		&:hover {
-			background-color: rgba(100, 100, 100, 100);
-		}
+
+.wpcf7-submit {
+	font-family: "Titillium Web", sans;
+	background-color: rgba(0, 0, 0, 100);
+	color: rgba(255, 255, 255, 100);
+	border-color: rgba(0, 0, 0, 100);
+	border-width: 2px !important;
+	border-radius: 2px;
+	border-style: solid;
+	padding: 12px, 30px !important;
+	text-transform: uppercase;
+	-webkit-transition: .25s;
+	transition: .25s;
+	&:hover {
+		background-color: rgba(100, 100, 100, 100);
+		border-color: rgba(100, 100, 100, 100);
 	}
 }
+
 
 //*[@id="wpcf7-f36-p32-o1"]/form/p[5]/input
 

@@ -5,3 +5,23 @@
 .josefin {
 	font-family: "Josefin Sans", sans;
 }
+
+a {
+	color: rgba(0, 0, 0, 100);
+	&:hover {
+		color: #30535e;
+		text-decoration: none;
+	}
+}
+
+.bold {
+	font-weight: 800;
+}
+
+.light {
+	font-weight: 200;
+}
+
+.upcase {
+	text-transform: uppercase;
+}
