@@ -1,6 +1,6 @@
-<head>
+ <head>
   <script src="<?php bloginfo('template_directory'); ?>/slideshow.js"></script>
-</head>
+ </head>
 <?php if ( have_posts() ) : ?>
 
 <?php
@@ -8,16 +8,16 @@
   while ( have_posts() ) : the_post();
   ?>
 
-  <?php $art = get_field( 'the_art' )["url"]; ?>
-  <?php $title = get_field( 'title' ) ?>
-  <?php $series = get_field( 'series' ) ?>
-  <?php $media = get_field( 'media' ) ?>
-  <?php $size = get_field( 'size' ) ?>
-  <?php $year = get_field( 'year' ) ?>
+    <?php $art = get_field( 'the_art' )["url"]; ?>
+    <?php $title = get_field( 'title' ) ?>
+    <?php $series = get_field( 'series' ) ?>
+    <?php $media = get_field( 'media' ) ?>
+    <?php $size = get_field( 'size' ) ?>
+    <?php $year = get_field( 'year' ) ?>
 
-  <div style="width: 75%">
-    <img src=<?php echo $art ?> class="slideshow" style="display: none; height: 400px">
-  
+    <div style="width: 75%">
+      <img src=<?php echo $art ?> class="slideshow" style="display: none; height: 400px">
+    
     <div class="slideshow_info_display" style="display: none;">
       <?php echo $title ?>
       <?php echo $series ?>
