@@ -4,15 +4,18 @@
 <html <?php language_attributes(); ?>>
     <head>
         <meta charset="<?php bloginfo( 'utf-8' ); ?>" />
-		    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-		    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta property="og:url" content="https://www.http://giant-stamp.flywheelsites.com/">
+	    <meta property="og:title" content="Watie White">
+	    <meta property="og:description" content="Painter, printmaker, public artist, and Bears fan.">
+	    <meta property="og:image" content="http://giant-stamp.flywheelsites.com/wp-content/uploads/2017/04/New-Nebraskans-Indian-Hills-inverview.jpg">
         <title><?php wp_title(); ?></title> 
         <link href="<?php bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="<?php bloginfo('template_directory'); ?>/menu-toggler.js"></script>
         <script src="<?php bloginfo('template_directory'); ?>/slideshow.js"></script>
         <script type="text/javascript" src="https://unpkg.com/masonry-layout@4.1.1/dist/masonry.pkgd.min.js"></script>
+        <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 
         <?php wp_head(); ?>
     </head>
@@ -22,9 +25,17 @@
 		<div class="top-menu-wrapper">
 			<div class="top-menu">
 				<ul class="nav-list josefin">
-					<li class="nav-item"><a href="/">Home</a></li>
-					<li class="nav-item"><a href="/page/public-work">Public Art</a></li>
-					<li class="nav-item"><a href="/page/studio-work">Studio Work</a></li>
+
+					<?php 
+						wp_list_categories( array (
+							'title_li' => '',
+							'orderby' => 'id',
+							'exclude' => [get_cat_ID( 'Press' ), get_cat_ID( 'Mural' )],
+							'hide_empty' => 0,
+							'depth' => 1
+						) );
+					?>
+
 					<li class="nav-item"><a href="/cv">CV</a></li>
 					<li class="nav-item"><a href="/contact">Contact</a></li>
 					<li class="nav-item"><a href="/page/press">Press</a></li>

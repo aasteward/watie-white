@@ -1,6 +1,6 @@
 .sidebar-wrapper {
 	height: 100vh;
-	min-width: 160px;
+	min-width: 140px;
 	max-width: 200px;
 }
 
@@ -10,8 +10,8 @@
 }
 
 .sidebar-top {
-	a {
-		line-height: 1.4em !important;
+	li {
+		line-height: 1.4em;
 	}
 }
 
@@ -29,7 +29,4 @@
 
 .publicity {
 	font-size: .8em;
-	li {
-		line-height: 1.8em;
-	}
 }

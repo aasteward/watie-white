@@ -9,6 +9,7 @@
 			<div class="main-content">
 				<div class="press-spacer">
 				</div>
+				
 				<?php if ( have_posts() ) : ?>
 
 				  <?php
