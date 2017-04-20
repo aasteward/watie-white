@@ -10,12 +10,20 @@
 				<div class="press-spacer">
 				</div>
 				
-				<?php if ( have_posts() ) : ?>
+				<?php if ( have_posts() ) :
 
-				  <?php
-				  // Start the loop.
-				  while ( have_posts() ) : the_post();
-				  ?>
+					$args = array(
+						'post_type' => 'article',
+					);
+
+				
+					query_posts($args) 
+				?>
+
+					<?php
+					// Start the loop.
+					while ( have_posts() ) : the_post();
+					?>
 
 				    <a class="press" href="<?php echo the_field( 'link' ); ?>"><span class="press publication"><?php echo the_field( "publication" ); ?></span> <?php echo the_title(); ?>, <?php the_date( 'y-m-d', '', '', true ) ?></a>
 				    <br>
@@ -25,6 +33,7 @@
 				  endwhile;
 
 				endif;
+				wp_reset_postdata();
 				?>
 			</div>
 		</div>

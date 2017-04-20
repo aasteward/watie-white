@@ -45,12 +45,13 @@
 
 .slideshow_info_display {
   background-color: rgba(255, 255, 255, 100);
+  padding-top: 8px;
   display: none;
   position: fixed !important;
   left: 12px !important;
   bottom: 0px !important;
   z-index: 2;
-  width: 160px;
+  width: 100vw;
   font-size: 12px;
 }
 
@@ -85,18 +86,17 @@
   top: 0px;
   left: 0px;
 }
+
 @media (min-width: 700px) {
-    .grid-item{
+  .grid-item {
     width: 40%;
     margin-left: 10px;
     animation: fadeIn
   }
 
-  // .slideshow_info_display {
-  //   left: 0px !important;
-  //   bottom: 0px !important;
-
-  // }
+  .slideshow_info_display {
+    max-width: 160px;
+  }
 
   .grid-item--width3 {
     width: 80%;

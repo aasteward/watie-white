@@ -2,6 +2,9 @@
 	font-family: "Titillium Web", sans;
 	font-size: .8em;
 	line-height: 1.4em;
+	&.content-wrapper {
+		padding: 0px 12px;
+	}
 	&.name {
 		text-transform: uppercase;
 		font-size: 2.2em;

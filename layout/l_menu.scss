@@ -3,6 +3,10 @@
 	padding: 18px;
 }
 
+.mobile-logo {
+	width: 100%;
+}
+
 .nav-item {
 	li {
 		padding: 4px;
@@ -14,6 +18,16 @@
 }
 
 .cat-item {
+	li {
+		padding: 4px;
+	}
+	a {
+		line-height: 2.4em;
+		font-size: 1.2em;
+	}
+}
+
+.page_item {
 	li {
 		padding: 4px;
 	}

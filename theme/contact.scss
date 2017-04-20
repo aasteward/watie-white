@@ -1,13 +1,18 @@
 .contact {
 	font-family: "Titillium Web", sans;
 	&.img-block {
-		padding: 18px;
+		padding: 8px 18px;
 	}
 	&.bio-wrapper {
 		padding: 12px;
+		max-width: 640px;
+		p {
+			margin-bottom: 8px;
+		}
 	}
 	&.form-wrapper {
 		padding: 12px;
+		max-width: 640px;
 	}
 }
 

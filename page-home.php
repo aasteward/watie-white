@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
   <head>
+    <title>
+      <?php if (is_home()){bloginfo('name');}
+        else
+        { ?>
+        <?php bloginfo('name');} ?>
+    </title>
     <meta charset="<?php bloginfo( 'utf-8' ); ?>" />
     <title><?php wp_title(); ?></title> 
     <link href="<?php bloginfo('template_directory'); ?>/style.css" rel="stylesheet">

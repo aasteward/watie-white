@@ -14,6 +14,9 @@
 
           if ($cat_parent == 0) { ?>
 
+            <div class="press-spacer">
+            </div>
+
             <div class="list-wrapper">
               <ul class="series-list josefin">
                 <?php 

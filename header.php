@@ -3,6 +3,12 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
     <head>
+	<title>
+	<?php if (is_home()){bloginfo('name');}
+	else
+	{ ?>
+	<?php bloginfo('name');} ?> | <?php echo strtoupper(wp_title('', false, '')); ?>
+	</title>
         <meta charset="<?php bloginfo( 'utf-8' ); ?>" />
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,9 +42,16 @@
 						) );
 					?>
 
-					<li class="nav-item"><a href="/cv">CV</a></li>
-					<li class="nav-item"><a href="/contact">Contact</a></li>
-					<li class="nav-item"><a href="/page/press">Press</a></li>
+					<?php
+					wp_list_pages( array (
+						'title_li' => '',
+						'orderby' => 'id',
+						'exclude' => '145',
+						'hide_empty' => 0,
+						'depth' => 1
+						) );
+					?>
+					
 				</ul>
 			</div>
 		</div>
@@ -46,12 +59,12 @@
 		<div class="else-wrapper">
 			<div class="mobile-toggle">
 				<div class="mobile-menu">
-					<div class="logo">
-						<img class="logo" src="/wp-content/uploads/2017/04/All-that-ever-was-always-is-2424-emmet.jpg" href="/" alt="Watie White">
+					<div class="mobile-logo">
+						<img class="logo mobile-logo toggler" src="/wp-content/uploads/2017/04/watie-icon.gif" href="/" alt="Watie White">
 					</div>
 				</div>
 
-				<div class="menu-button">
+				<!-- <div class="menu-button">
 					<a class="btn toggler josefin upcase">Menu</a>
-				</div>
+				</div> -->
 			</div>

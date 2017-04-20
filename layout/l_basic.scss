@@ -29,18 +29,19 @@
 	position: relative;
 	padding: 12px;
 	height: 90vh;
-	margin: 12px auto;
+	margin: 28px auto auto auto;
 }
 
 .contact.img-block {
-	text-align: center;
+	text-align: left;
 	img {
-		max-height: 50vh;
+		width: 100%;
+		max-width: 600px;
 	}
 }
 
 .press-spacer {
-	height: 64px;
+	height: 114px;
 }
 
 .side-content {
