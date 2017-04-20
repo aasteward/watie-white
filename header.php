@@ -60,7 +60,7 @@
 			<div class="mobile-toggle">
 				<div class="mobile-menu">
 					<div class="mobile-logo">
-						<img class="logo mobile-logo toggler" src="/wp-content/uploads/2017/04/watie-icon.gif" href="/" alt="Watie White">
+						<img class="logo mobile-logo toggler" src="/wp-content/uploads/2017/04/mobile-watie-header.png" href="/" alt="Watie White">
 					</div>
 				</div>
 

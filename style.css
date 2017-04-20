@@ -58,7 +58,7 @@ table {
 a {
   color: black; }
   a:hover {
-    color: #30535e;
+    color: #969696;
     text-decoration: none; }
 
 .bold {
@@ -280,6 +280,71 @@ a {
 .page_item a {
   line-height: 2.4em;
   font-size: 1.2em; }
+
+.landing-image {
+  background-image: url("/wp-content/uploads/2017/04/3-Holy-Island-Visitors.jpg"); }
+
+.landing-button {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  border-width: 2px !important;
+  border-radius: 2px;
+  border-style: solid;
+  letter-spacing: 4px;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  -webkit-transition: .25s;
+  transition: .25s; }
+  .landing-button:hover {
+    background-color: white;
+    color: #30525E; }
+
+.sidebar-top a {
+  font-weight: 200;
+  color: black;
+  text-decoration: none; }
+  .sidebar-top a:hover {
+    color: #969696;
+    text-decoration: none; }
+.sidebar-top li {
+  padding: 4px; }
+
+.sidebar-bottom a {
+  font-weight: 600;
+  color: black;
+  text-decoration: none; }
+  .sidebar-bottom a:hover {
+    color: #969696;
+    text-decoration: none; }
+
+.current-cat a {
+  font-weight: bolder; }
+
+.current-cat-ancestor a {
+  font-weight: bolder; }
+
+.current_page_item a {
+  font-weight: bolder; }
+
+.top-menu-wrapper {
+  background-color: #141414; }
+
+.nav-list li {
+  text-align: center; }
+.nav-list a {
+  font-weight: 200;
+  color: #cdcdcd; }
+  .nav-list a:hover {
+    color: #fcfcfc;
+    text-decoration: none; }
+
+.toggler {
+  -webkit-transition: .25s;
+  transition: .25s; }
+  .toggler:hover {
+    color: #969696;
+    text-decoration: none; }
 
 .contact {
   font-family: "Titillium Web", sans; }

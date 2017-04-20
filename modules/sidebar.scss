@@ -4,7 +4,7 @@
 		color: rgba(0, 0, 0, 100);
 		text-decoration: none;
 		&:hover {
-			color: #30535e;
+			color: rgba(150, 150, 150, 100);
 			text-decoration: none;
 		}
 	}
@@ -19,8 +19,20 @@
 		color: rgba(0, 0, 0, 100);
 		text-decoration: none;
 		&:hover {
-			color: #30535e;
+			color: rgba(150, 150, 150, 100);
 			text-decoration: none;
 		}
 	}
+}
+
+.current-cat a {
+	font-weight: bolder;
+}
+
+.current-cat-ancestor a {
+	font-weight: bolder;
+}
+
+.current_page_item a {
+	font-weight: bolder;
 }

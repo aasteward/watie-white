@@ -1,5 +1,5 @@
 .top-menu-wrapper {
-	background-color: #30535e;
+	background-color: rgba(20, 20, 20, 100);
 }
 
 .nav-list {
@@ -20,7 +20,7 @@
 	-webkit-transition: .25s;
 	transition: .25s;
 	&:hover {
-		color: #30535e;
+		color: rgba(150, 150, 150, 100);
 		text-decoration: none;
 	}
 }
