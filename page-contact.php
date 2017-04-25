@@ -10,6 +10,8 @@
     <meta charset="<?php bloginfo( 'utf-8' ); ?>" />
     <title><?php wp_title(); ?></title> 
     <link href="<?php bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
+    <script src="<?php bloginfo('template_directory'); ?>/menu-toggler.js"></script>
+    
     <?php wp_head(); ?>
   </head>
 
@@ -29,9 +31,16 @@
 						) );
 					?>
 
-					<li class="nav-item"><a href="/cv">CV</a></li>
-					<li class="nav-item"><a href="/contact">Contact</a></li>
-					<li class="nav-item"><a href="/page/press">Press</a></li>
+					<?php
+					wp_list_pages( array (
+						'title_li' => '',
+						'orderby' => 'id',
+						'exclude' => '145',
+						'hide_empty' => 0,
+						'depth' => 1
+						) );
+					?>
+					
 				</ul>
 			</div>
 		</div>
@@ -39,14 +48,14 @@
 		<div class="else-wrapper">
 			<div class="mobile-toggle">
 				<div class="mobile-menu">
-					<div class="logo">
-						<img class="logo" src="/wp-content/uploads/2017/04/watie-icon.gif" href="/" alt="Watie White">
+					<div class="mobile-logo">
+						<img class="logo mobile-logo toggler" src="/wp-content/uploads/2017/04/mobile-watie-header.png" href="/" alt="Watie White">
 					</div>
 				</div>
 
-				<div class="menu-button">
+				<!-- <div class="menu-button">
 					<a class="btn toggler josefin upcase">Menu</a>
-				</div>
+				</div> -->
 			</div>
 
 		  <div class="page-wrapper">
